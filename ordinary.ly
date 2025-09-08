@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.0"
 
 \header {
   tagline = ##f
@@ -182,7 +182,7 @@ gloriaText = \lyricmode {
 }
 
 \book {
-
+  \bookOutputName "willan_kyrie"
   \score {
     \header {
       piece = \markup { \caps { "Kyrie eleison" } }
@@ -199,9 +199,11 @@ gloriaText = \lyricmode {
         \remove Time_signature_engraver
       }
     }
-    \midi {}
   }
+}
 
+\book {
+    \bookOutputName "willan_gloria"
     \score {
     \header {
       piece = \markup \caps { "Gloria in excelsis" }
@@ -218,7 +220,6 @@ gloriaText = \lyricmode {
         \remove Time_signature_engraver
       }
     }
-    \midi {}
   }
 
 }
